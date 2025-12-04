@@ -1,0 +1,24 @@
+Data Creation: ArrayOf & MapOf Issues
+Data Creation: MapOf Incorrect JSON Structure Created
+Data Creation: Fullscreen Data Creator & JSON Viewer
+Data Creation: Max Depth Error
+Data Creation: Remove Item Feature
+Data Creation: Built in data validation
+Data Creation: Enumerated pointer
+Data Creation: ArrayOf Set & Unique Logic
+Data Creation: ArrayOf fields not displayed in order
+Data Creation: Validate Binary Data
+Data Creation: Adjust input validator to use redux
+JADN Validation: Choice Combine options missing opt signifier
+JADN Validation: Multiplicity issues with JADN base types
+JADN Validation: Defaults for JADN fields
+Data Creation: Choice Object Wrapper & Switching Error
+Data Creation: MapOf key conflation
+Data Creation: Show optional on type headers
+Data Creation: MapOf issues between separate mappings
+Data Creation: Input Validation
+Data Creation: Inputs of Structures Nested in MapOf lose state
+Data Creation: Change path to create/data
+Data Creation: Array Data creation uses improper brackets
+Data Creation: Info button to view comments
+Data Creation: Dynamic Form & Basic JSON Generation

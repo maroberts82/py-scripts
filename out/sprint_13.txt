@@ -1,0 +1,55 @@
+Trello Card Summary
+
+Total points: 43
+Total cards: 19
+
+Including Research Meeting Cards:
+Total points (with research meetings): 50
+Total cards (with research meetings): 26
+
+By card type:
+- Issue: 8 cards, 18 points
+- Customer Request: 2 cards, 4 points
+- Enhancement: 3 cards, 7 points
+- Essential: 6 cards, 14 points
+
+Grouped Card Names by Type and Application Section:
+
+Customer Request
+  JADN Sandbox
+    - Ability to use Concise JSON Data
+  JADN CLI
+    - Concise JSON Output Flag
+
+Issue
+  Schema Creation
+    - Unable to tab to Fields
+    - Process - (K)ey/(L)ink field option
+    - MapOf TypeOption Validation
+    - Array IPvNet Flickering Error
+  
+    - Translation: JSON Schema miss handling [0..*]
+  General
+    - Choice Multiplicity Fixes
+  JADN Sandbox
+    - React and React-dom causing docker image to fail
+  Data Validation
+    - XML Array as Dict
+
+Essential
+  General
+    - Updates to Not fieldoption for Choice
+    - Sandbox TagID Logic
+    - Create New Data Examples
+  JADN Validation
+    - Update Untagged Choice Options
+  JADN Sandbox
+    - Release v0.16.0
+    - Update Dependencies as needed
+
+Enhancement
+  Schema Creation
+    - Add a Regex Visualizer
+  General
+    - Expand Choice Test Cases
+    - Link Example Schemas to Example Data

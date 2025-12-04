@@ -1,0 +1,110 @@
+Trello Card Summary
+Processed Lanes: Sprint #14 - Closed, Sprint #13 - Closed, Sprint #12 - Closed
+
+Total points: 128
+Total cards: 59
+
+Including Research Meeting Cards:
+Total points (with research meetings): 135
+Total cards (with research meetings): 66
+
+By card type:
+- Issue: 20 cards, 41 points
+- Essential: 26 cards, 59 points
+- Enhancement: 11 cards, 24 points
+- Customer Request: 2 cards, 4 points
+
+Grouped Card Names by Type and Application Section:
+
+Customer Request
+  JADN Sandbox
+    - Ability to use Concise JSON Data
+  JADN CLI
+    - Concise JSON Output Flag
+
+Issue
+  Schema Creation
+    - Unable to tab to Meta Fields
+    - Unable to tab to Fields
+    - Process - (K)ey/(L)ink field option
+    - MapOf TypeOption Validation
+    - Array IPvNet Flickering Error
+    - sbToastSuccess bug
+    - Types inheriting fields via extension have duplicate ID's
+    - Allow restrict and extends to overwrite inherited fields
+  General
+    - New Docker image not appearing w/ latest tag
+    - Choice Multiplicity Fixes
+  JADN Utils
+    - Generate Graphvis Visualization per JADN 2.0
+    - Fix OC2 and AP Hunt GV Generation Err
+  
+    - Translation: JSON Schema miss handling [0..*]
+  JADN Sandbox
+    - React and React-dom causing docker image to fail
+  Data Validation
+    - XML Array as Dict
+    - Need to manually remove xml and json wrapper
+  JADN Validation
+    - XML Lists Appearing as Dicts
+    - Regex check fails on xml tags prepended with n
+  JADN XML
+    - Use Raw URL for JADN Base Type Schema Location
+  Data Creation
+    - Type does not inherit all fields from a type that also has inherited fields. (Recursive inheritance)
+
+Essential
+  JADN Validation
+    - Update Inheritance Logic
+    - Update Untagged Choice Options
+    - Update Integer format options
+  JADN Utils
+    - Build a JSON  Verbose to Compact Converter
+    - Build a JSON  Verbose to Concise Converter
+  Schema Creation
+    - Not option for untagged choice
+    - tagID & not opt only show up when appropriate
+    - u<n>  Integer
+    - i<n>  Integer
+    - Rebuild AP Hunt using JADN 2.0
+    - Rebuild OC2 v1.1 using JADN 2.0
+    - Rebuild OC2 v1.0.1 using JADN 2.0
+  General
+    - Updates to Not fieldoption for Choice
+    - Sandbox TagID Logic
+    - Create New Data Examples
+  JADN Sandbox
+    - Release v0.16.0
+    - Update Dependencies as needed
+  Data Validation
+    - Ipv6-net Data Validation
+    - Ipv4-net Data Validation
+    - add formats for f128 and f256
+  Data Creation
+    - Combine Logic
+    - Ipv4Net and Ipv6Net
+  Validation
+    - JSON formatted ip-net validation
+  JADN CLI
+    - Incorporate XSD Attr Logic
+    - Update Schema Validation API to use new 2.0 Validation
+  
+    - Data Creation: Final Logic
+
+Enhancement
+  General
+    - JADN CLI - Display File After Processing
+    - Expand Choice Test Cases
+    - Link Example Schemas to Example Data
+    - Condense Data Creation Code & Bug Fixes
+  Visualization
+    - Expand the User Adjustable Graphvis Options
+  JADN CLI
+    - Update Help Context
+    - Add the ability to View a Schema or Output Data
+  Schema Creation
+    - Add a Regex Visualizer
+    - Tooltip to show inheritance hierarchy
+  Data Creation
+    - Tooltip to show inheritance hierarchy
+    - Include the CBOR Annotated Hex View

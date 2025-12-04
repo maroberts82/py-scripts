@@ -1,0 +1,27 @@
+Trello Card Summary
+
+Total points: 8
+Total cards: 3
+
+Including Research Meeting Cards:
+Total points (with research meetings): 15
+Total cards (with research meetings): 10
+
+By card type:
+- Essential: 1 cards, 4 points
+- Enhancement: 1 cards, 3 points
+- Issue: 1 cards, 1 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  Schema Creation
+    - Meta Cleared After NSID Update
+
+Essential
+  JADN Utils
+    - Generate PUML Visualization per JADN 2.0
+
+Enhancement
+  Schema Creation
+    - Add a Tree View of the JADN Types

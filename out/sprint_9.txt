@@ -1,0 +1,22 @@
+Data Creation: issues found in first demo w/ Larry
+JADN Validation: Include Inheritance Logic
+Data Creation: Enum pointer dropdown
+Data Creation: Save/Load Data Builder State
+Data Creation: Structs not disappearing when empty
+Data Creation: Clear fields button
+Data Creation: Field Multiplicity
+move integer size constraint formats to new paradigm
+JADN Validation: Choice in Array issue
+JADN Validation: 2.0 Testing and Logic Cleanup
+JADN Validation: Choice TagID option
+Data Creation: Fields lose value when toggled
+Data Creation: Binary Info Viewer
+JADN Validation: Multiplicity issues in JADN field definitions
+JADN Validation: Derived Enumerations
+Data Creation: Generate Data
+Data Creation: MapOf w/ Enumerated Key
+Data Creation: Improve handling of Date and Times
+Data Creation: Improve UI for better ease and usability
+Data Creation: Calendar addon for date inputs
+Data Creation: ID option not displaying properly
+Data Creation: ID (=) logic

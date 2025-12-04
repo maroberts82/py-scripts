@@ -1,0 +1,60 @@
+Trello Card Summary
+Processed Lanes: Final Sprint - Completed, Sprint #15 - Closed
+
+Total points: 55
+Total cards: 23
+
+Including Research Meeting Cards:
+Total points (with research meetings): 62
+Total cards (with research meetings): 30
+
+By card type:
+- Essential: 8 cards, 23 points
+- Issue: 12 cards, 24 points
+- Enhancement: 3 cards, 8 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  Translation
+    - Incorrect Root Transferred
+    - JSON Schema to JADN Exports Missing
+  Validation
+    - Untagged Choice Validation Error
+  Data Translation
+    - Redux states not updating when schema pasted in
+  JADN CLI
+    - Fix Failed Unit Tests
+    - Errors
+  JADN Sandbox
+    - Unable to see schema types other than .jadn in the dropdown
+    - Updated Home Page Links and Text
+  General
+    - JADN to JSON Error
+  Schema Creation
+    - Adding derived enum adds multiple copies of fields
+    - Meta Cleared After NSID Update
+  JADN Validation
+    - Issues with Map validation
+
+Essential
+  JADN Utils
+    - Fill in null for empty optional vals during compact/concise conversion
+    - Compact to Verbose Converter
+    - Generate PUML Visualization per JADN 2.0
+  Data Creation
+    - Remove compact & concise view
+  Data Translation
+    - Compact/Concise/Verbose Functionality
+  JADN Validation
+    - Compact Validation Logic
+    - Schema Validation using JADN 2.0 Metaschema
+    - add Keyless Map and Field Aliases Options
+
+Enhancement
+  Schema Translation
+    - Line breaks in JSON and JIDL reverse conversion
+  Visualization
+    - Expand the User Adjustable Puml Options
+  Schema Creation
+    - Add a Tree View of the JADN Types

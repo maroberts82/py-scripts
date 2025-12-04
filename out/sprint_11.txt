@@ -1,0 +1,48 @@
+Trello Card Summary
+
+Total points: 32
+Total cards: 16
+
+Including Research Meeting Cards:
+Total points (with research meetings): 39
+Total cards (with research meetings): 23
+
+By card type:
+- Essential: 8 cards, 13 points
+- Issue: 5 cards, 10 points
+- Customer Request: 1 cards, 3 points
+- Enhancement: 2 cards, 6 points
+
+Grouped Card Names by Type and Application Section:
+
+Customer Request
+  Data Creation
+    - Global Schema State - Redux
+
+Issue
+  Data Creation
+    - Key / Link logic to handle Recursion
+  JADN Sandbox
+    - Review and Update Visualization Schema Loader
+    - Incorrect Syntax Color Scheme
+  Schema Creation
+    - Incorrect element count
+    - Missing 5 empty array field for ArrayOf and MapOf
+
+Essential
+  Data Creation
+    - Abstract Logic
+    - Restricts Logic
+    - Extends Logic
+    - Compound Type Options
+    - Set option
+    - Unordered option
+  Schema Creation
+    - Redesign Option Modal
+  JADN Validation
+    - Update String format options
+
+Enhancement
+  Data Creation
+    - XML & CBOR Viewers
+    - Highlight input field & JSON

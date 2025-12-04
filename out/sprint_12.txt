@@ -1,0 +1,61 @@
+Trello Card Summary
+
+Total points: 50
+Total cards: 25
+
+Including Research Meeting Cards:
+Total points (with research meetings): 57
+Total cards (with research meetings): 32
+
+By card type:
+- Enhancement: 4 cards, 9 points
+- Issue: 8 cards, 14 points
+- Essential: 13 cards, 27 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  Data Validation
+    - Need to manually remove xml and json wrapper
+  JADN Validation
+    - XML Lists Appearing as Dicts
+    - Regex check fails on xml tags prepended with n
+  Schema Creation
+    - sbToastSuccess bug
+    - Types inheriting fields via extension have duplicate ID's
+    - Allow restrict and extends to overwrite inherited fields
+  JADN XML
+    - Use Raw URL for JADN Base Type Schema Location
+  Data Creation
+    - Type does not inherit all fields from a type that also has inherited fields. (Recursive inheritance)
+
+Essential
+  Data Validation
+    - Ipv6-net Data Validation
+    - Ipv4-net Data Validation
+    - add formats for f128 and f256
+  JADN Validation
+    - Update Integer format options
+  Data Creation
+    - Combine Logic
+    - Ipv4Net and Ipv6Net
+  Validation
+    - JSON formatted ip-net validation
+  JADN CLI
+    - Incorporate XSD Attr Logic
+    - Update Schema Validation API to use new 2.0 Validation
+  Schema Creation
+    - Rebuild AP Hunt using JADN 2.0
+    - Rebuild OC2 v1.1 using JADN 2.0
+    - Rebuild OC2 v1.0.1 using JADN 2.0
+  
+    - Data Creation: Final Logic
+
+Enhancement
+  General
+    - Condense Data Creation Code & Bug Fixes
+  Schema Creation
+    - Tooltip to show inheritance hierarchy
+  Data Creation
+    - Tooltip to show inheritance hierarchy
+    - Include the CBOR Annotated Hex View

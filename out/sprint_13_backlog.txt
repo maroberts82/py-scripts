@@ -1,0 +1,39 @@
+Trello Card Summary
+
+Total points: 22
+Total cards: 9
+
+Including Research Meeting Cards:
+Total points (with research meetings): 29
+Total cards (with research meetings): 16
+
+By card type:
+- Issue: 4 cards, 11 points
+- Essential: 4 cards, 9 points
+- Enhancement: 1 cards, 2 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  General
+    - XML Validation Errors
+  Data Translation
+    - Allow wrapper or no wrapper on data validation
+  Data Validation
+    - XML Array as Dict
+  Schema Creation
+    - Unable to tab to Fields
+
+Essential
+  JADN Validation
+    - Update Untagged Choice Options
+  General
+    - Sandbox TagID Logic
+  JADN Sandbox
+    - Update Dependencies as needed
+  Schema Creation
+    - Not option for untagged choice
+
+Enhancement
+  General
+    - Link Example Schemas to Example Data

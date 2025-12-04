@@ -1,0 +1,45 @@
+Trello Card Summary
+
+Total points: 35
+Total cards: 15
+
+Including Research Meeting Cards:
+Total points (with research meetings): 42
+Total cards (with research meetings): 22
+
+By card type:
+- Issue: 4 cards, 9 points
+- Essential: 7 cards, 18 points
+- Enhancement: 4 cards, 8 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  Schema Creation
+    - Unable to tab to Meta Fields
+  General
+    - New Docker image not appearing w/ latest tag
+  JADN Utils
+    - Generate Graphvis Visualization per JADN 2.0
+    - Fix OC2 and AP Hunt GV Generation Err
+
+Essential
+  JADN Validation
+    - Update Inheritance Logic
+  JADN Utils
+    - Build a JSON  Verbose to Compact Converter
+    - Build a JSON  Verbose to Concise Converter
+  Schema Creation
+    - Not option for untagged choice
+    - tagID & not opt only show up when appropriate
+    - u<n>  Integer
+    - i<n>  Integer
+
+Enhancement
+  General
+    - JADN CLI - Display File After Processing
+  Visualization
+    - Expand the User Adjustable Graphvis Options
+  JADN CLI
+    - Update Help Context
+    - Add the ability to View a Schema or Output Data

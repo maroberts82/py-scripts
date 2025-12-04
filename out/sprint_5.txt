@@ -1,0 +1,16 @@
+JADN Sandbox: Generation - Align with JADN 2.0
+JADN Sandbox: Translation - Align with JADN 2.0
+JADN Sandbox: Visualization - Align with JADN 2.0
+JADN Sandbox: Data Creation - Align with JADN 2.0
+JADN Sandbox: Schema Creation - Align with JADN 2.0
+JADN Sandbox: Validation - Align with JADN 2.0
+JADN Sandbox: Data Generation - Align with JADN 2.0
+JADN Sandbox: Add JADN 2.0 Decimal Formats
+Schema Creation: Add JADN Primitives to ktype selection
+JADN Schema: Change Exports to Roots
+JADN Schema: Change Imports to Namespaces
+JADN Schema: Change Info to Meta
+JADN CLI: Improve the schema_vis command to allow opts
+JADN CLI: Setup GitHub CICD
+JADN CLI: Create Whl of Customer's CLI Logic
+JADN CLI: Update help to provide actual commands

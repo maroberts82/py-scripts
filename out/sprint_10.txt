@@ -1,0 +1,36 @@
+Move Metaschema to a Common Repo
+Schema Creation: Rebuild OSCAL SSP using JADN 2.0
+Build JADN Sandbox Docker Image 0.15.0
+Schema & Data Creation: Unique/ordered option
+Schema & Data Creation: Const option
+Schema & Data Creation: Default option
+Schema Creation: Quick Nav to Data Creation & Vice Versa
+Schema Creation: Rebuild OSCAL POAM using JADN 2.0
+Schema Creation: Rebuild OSCAL AR using JADN 2.0
+Schema Creation: Rebuild OSCAL Profile using JADN 2.0
+Schema Creation: Rebuild OSCAL Component using JADN 2.0
+Schema Creation: Rebuild OSCAL Catalog using JADN 2.0
+Schema Creation: Add a copy type feature / Duplicate button
+Schema Creation: Set Startup Schema as the 1st Schema Example
+Schema Creation: Rebuild OSCAL AP using JADN 2.0
+: Data Creation: Derived Enum
+: Schema Creation: Redesign Field Options Modal
+: Data Creation: Rebuild Data Creation Page
+JADN Validation and JADN Sandbox: Incorporate XSD Attr Logic with Sandbox
+JADN Sandbox: /attr Field Option
+JADN Validation: Add JADN 2.0 String Formats (Sandbox Only)
+JADN Validation: Add JADN 2.0 Integer Formats (Sandbox Only)
+Data Creation: Date Time Integer Input not Auto Filling
+JADN Validation: Add JADN 2.0 Decimal Integer Formats (Sandbox Only)
+JADN Validation: Add JADN 2.0 Duration Formats (Sandbox Only)
+Schema Creation: Update Validation API to use new 2.0 Validation
+JADN Validation: Add Validation for Binary x, X and b Options
+Create an Updated JADN2 Whl
+JADN Validation: Add JADN 2.0 Binary Formats (Sandbox Only)
+Data Creation: min/maxInclusive/Exclusive
+Schema Creation: Add Options for Inclusive and Exclusive (min/max) Instance Value Limits for Integers, Numbers and Strings
+Schema Creation: Integer Duration Format Option
+Schema Validation: Issue recognizing outside types
+Data Creation: Generate Required Data Only
+Data Creation: Date and Time addon issues
+: Data Creation: Prompt user before deleting saved builder

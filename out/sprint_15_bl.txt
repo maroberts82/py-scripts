@@ -1,0 +1,24 @@
+Trello Card Summary
+
+Total points: 10
+Total cards: 4
+
+Including Research Meeting Cards:
+Total points (with research meetings): 17
+Total cards (with research meetings): 11
+
+By card type:
+- Essential: 2 cards, 4 points
+- Issue: 2 cards, 6 points
+
+Grouped Card Names by Type and Application Section:
+
+Issue
+  JADN Validation
+    - Issues with Map validation
+    - Choice Not option allowing all Not Fields
+
+Essential
+  JADN Validation
+    - add Keyless Map and Field Aliases Options
+    - Schema Validation using JADN 2.0 Metaschema

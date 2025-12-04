@@ -1,0 +1,9 @@
+JADN CLI: Bulk Converter
+Add JADN 2.0 XML format validations
+JADN Validation: Add JADN 2.0 String Formats (Supporting Code)
+JADN CLI: Update supporting whls
+JADN Validation: Add JADN 2.0 Decimal Integer Formats (Supporting Code)
+JADN Validation: Add JADN 2.0 Duration Formats (Supporting Code)
+JADN Validation: Add JADN 2.0 Integer Formats (Supporting Code)
+JADN Validation: Add JADN 2.0 Binary Formats (Supporting Code)
+JADN XML: XSD/XML Validation Tests
