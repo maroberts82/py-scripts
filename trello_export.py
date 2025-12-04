@@ -1,9 +1,13 @@
 import json
 import re
+import pandas as pd
+import sys
+from datetime import datetime
 
 
 def get_card_data():
-    f = open('./data/trello_card_data.json')
+    f = open('./data/sb-tto-15- software-trello-tickets.json')
+    # f = open('./data/trello_card_data.json')
     # f = open('./data/zzzz.json')
     data = json.load(f)
 
@@ -66,6 +70,98 @@ def parse_card_name(card_name):
         points = None if points_raw == 'P' else int(points_raw)
         return card_type, points
     return None, None
+
+
+def flatten_card_data_to_dataframe(card_data):
+    """
+    Flatten Trello card data into a pandas DataFrame suitable for spreadsheet import.
+    
+    Args:
+        card_data: Dictionary containing Trello export data
+        
+    Returns:
+        pandas DataFrame with flattened card information
+    """
+    cards = card_data.get("cards", [])
+    lists = card_data.get("lists", [])
+    labels = card_data.get("labels", [])
+    members = card_data.get("members", [])
+    
+    # Create lookup dictionaries for easy reference
+    list_lookup = {lst["id"]: lst["name"] for lst in lists}
+    label_lookup = {lbl["id"]: lbl["name"] for lbl in labels}
+    member_lookup = {mem["id"]: mem["fullName"] for mem in members}
+    
+    # Flatten card data
+    flattened_cards = []
+    
+    for card in cards:
+        # Parse card name for type and points
+        card_type, points = parse_card_name(card.get("name", ""))
+        
+        # Extract label names
+        card_labels = [label_lookup.get(lbl_id, lbl_id) for lbl_id in card.get("idLabels", [])]
+        
+        # Extract member names
+        card_members = [member_lookup.get(mem_id, mem_id) for mem_id in card.get("idMembers", [])]
+        
+        # Parse dates
+        date_last_activity = card.get("dateLastActivity", "")
+        date_created = card.get("dateCompleted", "")
+        due_date = card.get("due", "")
+        
+        flattened_card = {
+            "ID": card.get("id", ""),
+            "Card Name": card.get("name", ""),
+            "Card Type": card_type if card_type else "",
+            "Points": points if points is not None else "",
+            "Description": card.get("desc", ""),
+            "List": list_lookup.get(card.get("idList", ""), ""),
+            "Labels": ", ".join(card_labels) if card_labels else "",
+            "Members": ", ".join(card_members) if card_members else "",
+            "Due Date": due_date,
+            "Closed": card.get("closed", False),
+            "Date Last Activity": date_last_activity,
+            "URL": card.get("url", ""),
+            "Short Link": card.get("shortLink", ""),
+            "Checklist Count": len(card.get("idChecklists", [])),
+            "Attachment Count": len(card.get("attachments", [])),
+        }
+        
+        flattened_cards.append(flattened_card)
+    
+    # Create DataFrame
+    df = pd.DataFrame(flattened_cards)
+    
+    return df
+
+
+def export_cards_to_csv(output_csv="./out/trello_cards_export.csv"):
+    """
+    Read Trello card data and export to CSV for easy spreadsheet import.
+    
+    Args:
+        output_csv: Path to output CSV file
+    """
+    print("Reading Trello card data...")
+    card_data = get_card_data()
+    
+    print("Flattening card data...")
+    df = flatten_card_data_to_dataframe(card_data)
+    
+    # Sort by list and card name
+    df = df.sort_values(by=["List", "Card Name"])
+    
+    print(f"Exporting {len(df)} cards to {output_csv}...")
+    df.to_csv(output_csv, index=False)
+    
+    print(f"\nExport complete!")
+    print(f"Total cards exported: {len(df)}")
+    print(f"Columns: {', '.join(df.columns)}")
+    print(f"\nSummary by List:")
+    print(df["List"].value_counts())
+    
+    return df
 
 
 def main():
@@ -214,4 +310,36 @@ def main():
   
 # __name__
 if __name__=="__main__":
-    main()
+    # Check command-line arguments
+    if len(sys.argv) > 1:
+        command = sys.argv[1].lower()
+        
+        if command in ['csv', 'export']:
+            # Export cards to CSV
+            output_file = sys.argv[2] if len(sys.argv) > 2 else "./out/trello_cards_export.csv"
+            export_cards_to_csv(output_file)
+        elif command in ['summary', 'sprint']:
+            # Run the original sprint summary logic
+            main()
+        elif command in ['help', '-h', '--help']:
+            print("Usage:")
+            print("  python trello_export.py [command] [options]")
+            print()
+            print("Commands:")
+            print("  csv, export [output_file]  - Export cards to CSV (default: ./out/trello_cards_export.csv)")
+            print("  summary, sprint            - Generate sprint summary report (original logic)")
+            print("  help, -h, --help           - Show this help message")
+            print()
+            print("Examples:")
+            print("  python trello_export.py csv")
+            print("  python trello_export.py csv ./out/my_cards.csv")
+            print("  python trello_export.py summary")
+        else:
+            print(f"Unknown command: {command}")
+            print("Run 'python trello_export.py help' for usage information")
+    else:
+        # Default: run the original sprint summary logic
+        print("Running default sprint summary...")
+        print("Tip: Run 'python trello_export.py help' to see all available commands")
+        print()
+        main()
